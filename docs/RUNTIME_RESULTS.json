@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-13T19:14:39.904Z",
+  "fullStopStartWithoutVolumeRemoval": true,
+  "requestHistoryPreserved": 13,
+  "schemaIdPreserved": "a71a5d75-b543-4dbc-8ad3-870e86a95c08",
+  "testRunsPreserved": 1,
+  "snapshotsPreserved": 1,
+  "selectionCoverageBefore": 82.83,
+  "selectionCoverageAfterLiveRequest": 84.85,
+  "verifiedCoveragePreserved": 80.81,
+  "sseReconnectedWithoutPageReload": true,
+  "browserJavascriptErrors": [],
+  "serviceHealth": [
+    "/innosight-demo-api-1|node|healthy",
+    "/innosight-postgres-1||healthy",
+    "/innosight-server-1|node|healthy",
+    "/innosight-web-1|nginx|healthy"
+  ]
+}

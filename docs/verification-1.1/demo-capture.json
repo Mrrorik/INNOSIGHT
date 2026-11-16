@@ -1,0 +1,212 @@
+{
+  "capturedAt": "2026-11-14T07:45:53.093Z",
+  "metrics": {
+    "total": 99,
+    "observed": 85,
+    "verified": 80,
+    "selectionCoverage": 85.86,
+    "verifiedCoverage": 80.81,
+    "requests": 26,
+    "errors": 3,
+    "errorRate": 11.54,
+    "averageLatency": 35,
+    "p95Latency": 33,
+    "unobserved": 14,
+    "successfulTests": 8
+  },
+  "breakingChanges": 2,
+  "testRuns": 1,
+  "snapshots": 2,
+  "captureId": "f94204cf-9c28-4387-ac50-e40a33393606",
+  "scenarios": [
+    {
+      "name": "discover",
+      "before": {
+        "total": 99,
+        "observed": 25,
+        "verified": 0,
+        "selectionCoverage": 25.25,
+        "verifiedCoverage": 0,
+        "requests": 3,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 3,
+        "p95Latency": 3,
+        "unobserved": 74,
+        "successfulTests": 0
+      },
+      "after": {
+        "total": 99,
+        "observed": 25,
+        "verified": 0,
+        "selectionCoverage": 25.25,
+        "verifiedCoverage": 0,
+        "requests": 3,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 3,
+        "p95Latency": 3,
+        "unobserved": 74,
+        "successfulTests": 0
+      }
+    },
+    {
+      "name": "traffic",
+      "before": {
+        "total": 99,
+        "observed": 25,
+        "verified": 0,
+        "selectionCoverage": 25.25,
+        "verifiedCoverage": 0,
+        "requests": 3,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 3,
+        "p95Latency": 3,
+        "unobserved": 74,
+        "successfulTests": 0
+      },
+      "after": {
+        "total": 99,
+        "observed": 34,
+        "verified": 0,
+        "selectionCoverage": 34.34,
+        "verifiedCoverage": 0,
+        "requests": 12,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 5,
+        "p95Latency": 33,
+        "unobserved": 65,
+        "successfulTests": 0
+      }
+    },
+    {
+      "name": "blindspots",
+      "before": {
+        "total": 99,
+        "observed": 34,
+        "verified": 0,
+        "selectionCoverage": 34.34,
+        "verifiedCoverage": 0,
+        "requests": 12,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 5,
+        "p95Latency": 33,
+        "unobserved": 65,
+        "successfulTests": 0
+      },
+      "after": {
+        "total": 99,
+        "observed": 34,
+        "verified": 0,
+        "selectionCoverage": 34.34,
+        "verifiedCoverage": 0,
+        "requests": 12,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 5,
+        "p95Latency": 33,
+        "unobserved": 65,
+        "successfulTests": 0
+      }
+    },
+    {
+      "name": "incident",
+      "before": {
+        "total": 99,
+        "observed": 34,
+        "verified": 0,
+        "selectionCoverage": 34.34,
+        "verifiedCoverage": 0,
+        "requests": 12,
+        "errors": 0,
+        "errorRate": 0,
+        "averageLatency": 5,
+        "p95Latency": 33,
+        "unobserved": 65,
+        "successfulTests": 0
+      },
+      "after": {
+        "total": 99,
+        "observed": 36,
+        "verified": 0,
+        "selectionCoverage": 36.36,
+        "verifiedCoverage": 0,
+        "requests": 15,
+        "errors": 2,
+        "errorRate": 13.33,
+        "averageLatency": 59,
+        "p95Latency": 807,
+        "unobserved": 63,
+        "successfulTests": 0
+      }
+    },
+    {
+      "name": "recover",
+      "before": {
+        "total": 99,
+        "observed": 36,
+        "verified": 0,
+        "selectionCoverage": 36.36,
+        "verifiedCoverage": 0,
+        "requests": 15,
+        "errors": 2,
+        "errorRate": 13.33,
+        "averageLatency": 59,
+        "p95Latency": 807,
+        "unobserved": 63,
+        "successfulTests": 0
+      },
+      "after": {
+        "total": 99,
+        "observed": 85,
+        "verified": 80,
+        "selectionCoverage": 85.86,
+        "verifiedCoverage": 80.81,
+        "requests": 23,
+        "errors": 3,
+        "errorRate": 13.04,
+        "averageLatency": 39,
+        "p95Latency": 33,
+        "unobserved": 14,
+        "successfulTests": 8
+      }
+    },
+    {
+      "name": "changes",
+      "before": {
+        "total": 99,
+        "observed": 85,
+        "verified": 80,
+        "selectionCoverage": 85.86,
+        "verifiedCoverage": 80.81,
+        "requests": 23,
+        "errors": 3,
+        "errorRate": 13.04,
+        "averageLatency": 39,
+        "p95Latency": 33,
+        "unobserved": 14,
+        "successfulTests": 8
+      },
+      "after": {
+        "total": 99,
+        "observed": 85,
+        "verified": 80,
+        "selectionCoverage": 85.86,
+        "verifiedCoverage": 80.81,
+        "requests": 23,
+        "errors": 3,
+        "errorRate": 13.04,
+        "averageLatency": 39,
+        "p95Latency": 33,
+        "unobserved": 14,
+        "successfulTests": 8
+      }
+    }
+  ],
+  "browserJavascriptErrors": [],
+  "images": "docs/screenshots",
+  "pdf": "docs/INNOSIGHT_SAMPLE_REPORT.pdf"
+}

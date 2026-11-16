@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-14T07:42:38.223Z",
+  "transport": "Production nginx → Fastify Proxy → Yoga Demo API → PostgreSQL",
+  "fullComposeStopStart": true,
+  "volumeRemoved": false,
+  "captureId": "e7a3f5ca-8aa1-4764-9b4a-9f99dec2296d",
+  "requestsPreserved": 6,
+  "capturedRequestsBeforeRestart": 2,
+  "capturedFieldsBeforeRestart": 6,
+  "capturedTypesBeforeRestart": 3,
+  "capturedRequestsAfterRestart": 3,
+  "capturedFieldsAfterRestart": 7,
+  "schemaPreserved": true,
+  "requestIdsPreserved": true,
+  "snapshotPreserved": true,
+  "selectionCoverageBefore": 28.28,
+  "selectionCoverageAfter": 29.29,
+  "sseDashboardUpdatedWithoutReload": true,
+  "finishedTokenStatus": 409,
+  "verifiedCoverage": 0,
+  "browserJavascriptErrors": []
+}

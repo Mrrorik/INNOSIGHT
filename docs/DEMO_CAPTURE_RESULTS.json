@@ -1,0 +1,26 @@
+{
+  "capturedAt": "2026-11-13T19:17:05.862Z",
+  "metrics": {
+    "total": 99,
+    "observed": 85,
+    "verified": 80,
+    "selectionCoverage": 85.86,
+    "verifiedCoverage": 80.81,
+    "requests": 24,
+    "errors": 3,
+    "errorRate": 12.5,
+    "averageLatency": 40,
+    "p95Latency": 23,
+    "unobserved": 14,
+    "successfulTests": 8
+  },
+  "breakingChanges": 2,
+  "testRuns": 1,
+  "snapshots": 2,
+  "browserErrors": [],
+  "screenshotViewport": {
+    "width": 1440,
+    "height": 1050
+  },
+  "pdf": "docs/INNOSIGHT_SAMPLE_REPORT.pdf"
+}

@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-14T07:43:11.298Z",
+  "node": "v24.22.1",
+  "transport": "Real HTTP via nginx frontend and Fastify backend; PostgreSQL persistence",
+  "before": {
+    "total": 99,
+    "observed": 25,
+    "verified": 0,
+    "selectionCoverage": 25.25,
+    "verifiedCoverage": 0,
+    "requests": 3,
+    "errors": 0,
+    "errorRate": 0,
+    "averageLatency": 24,
+    "p95Latency": 46,
+    "unobserved": 74,
+    "successfulTests": 0
+  },
+  "afterQuery": {
+    "total": 99,
+    "observed": 28,
+    "verified": 0,
+    "selectionCoverage": 28.28,
+    "verifiedCoverage": 0,
+    "requests": 4,
+    "errors": 0,
+    "errorRate": 0,
+    "averageLatency": 28,
+    "p95Latency": 46,
+    "unobserved": 71,
+    "successfulTests": 0
+  },
+  "final": {
+    "total": 99,
+    "observed": 82,
+    "verified": 80,
+    "selectionCoverage": 82.83,
+    "verifiedCoverage": 80.81,
+    "requests": 13,
+    "errors": 2,
+    "errorRate": 15.38,
+    "averageLatency": 17,
+    "p95Latency": 46,
+    "unobserved": 17,
+    "successfulTests": 8
+  },
+  "requestId": "069aa33c-bc42-429c-a4c5-2ddd1ddb62e7",
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "before": 0,
+    "after": 80.81
+  },
+  "breakingChanges": 2,
+  "reportBytes": {
+    "json": 74436,
+    "csv": 4940,
+    "html": 5795,
+    "risks": 4561
+  },
+  "sse": true
+}

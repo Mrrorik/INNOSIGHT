@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-14T07:49:20.593681+00:00",
+  "archive": "INNOSIGHT-1.1-complete.zip",
+  "zipCRC": "PASS",
+  "extraction": "PASS",
+  "requiredSourceAndMaterialFiles": "PASS",
+  "requiredFilesByteComparison": "PASS",
+  "extractedDockerComposeConfig": "PASS",
+  "noNodeModulesDotEnvOrGitDirectory": true,
+  "liveServicesHealthy": ["postgres", "demo-api", "server", "web"],
+  "liveReadinessHTTP": 200,
+  "liveBeginnerGuideHTTP": 200
+}

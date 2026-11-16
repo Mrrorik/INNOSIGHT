@@ -1,0 +1,72 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: innosight
+      POSTGRES_PASSWORD: innosight
+      POSTGRES_DB: innosight
+    ports: ['127.0.0.1:5432:5432']
+    volumes: ['postgres_data:/var/lib/postgresql/data']
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U innosight -d innosight']
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  demo-api:
+    init: true
+    build: { context: ., target: runtime }
+    command: ['npm', 'run', 'start', '-w', 'apps/demo-api']
+    environment:
+      DEMO_INTERNAL_TOKEN: local-demo-internal
+    ports: ['127.0.0.1:5000:5000']
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://localhost:5000/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+  server:
+    init: true
+    build: { context: ., target: runtime }
+    command: ['npm', 'run', 'start', '-w', 'apps/server']
+    environment:
+      DATABASE_URL: postgresql://innosight:innosight@postgres:5432/innosight
+      DEMO_API_URL: http://demo-api:5000/graphql
+      DEMO_INTERNAL_TOKEN: local-demo-internal
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      UPSTREAM_ALLOWLIST: ${UPSTREAM_ALLOWLIST:-}
+      UPSTREAM_HEADERS_JSON: ${UPSTREAM_HEADERS_JSON:-}
+    ports: ['127.0.0.1:4000:4000']
+    depends_on:
+      postgres: { condition: service_healthy }
+      demo-api: { condition: service_healthy }
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://localhost:4000/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  web:
+    build: { context: ., target: web }
+    init: true
+    ports: ['127.0.0.1:3000:8080']
+    depends_on:
+      server: { condition: service_healthy }
+    healthcheck:
+      test: ['CMD', 'wget', '-Y', 'off', '--spider', '-q', 'http://127.0.0.1:8080/']
+      interval: 5s
+      timeout: 3s
+      retries: 15
+
+volumes:
+  postgres_data:

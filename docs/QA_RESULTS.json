@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-11-13T19:18:27.603Z",
+  "backend": {
+    "passed": 59,
+    "failed": 0,
+    "total": 59,
+    "suites": [
+      {
+        "name": "analysis.test.ts",
+        "tests": 20,
+        "status": "passed"
+      },
+      {
+        "name": "integration.test.ts",
+        "tests": 28,
+        "status": "passed"
+      },
+      {
+        "name": "locks.test.ts",
+        "tests": 3,
+        "status": "passed"
+      },
+      {
+        "name": "security.test.ts",
+        "tests": 8,
+        "status": "passed"
+      }
+    ]
+  },
+  "productionBrowser": {
+    "startTime": "2026-11-13T19:08:19.142Z",
+    "duration": 23634.202,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "baseURL": "http://localhost:3000",
+    "servedBy": "nginx production assets + Docker Compose",
+    "viewports": [1280, 390],
+    "browser": "Chromium"
+  },
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  }
+}
